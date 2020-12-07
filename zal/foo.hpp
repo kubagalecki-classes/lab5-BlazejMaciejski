@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Human.hpp"
 
 #include <algorithm>
@@ -13,10 +15,10 @@ std::vector< char > foo(std::list< Human >& people)
         person.birthday();
 
         if (person.isMonster()) {
-            isAnimalLover[i] = 'y';
+            isAnimalLover[i] = 'n';
         }
         else {
-            isAnimalLover[i] = 'n';
+            isAnimalLover[i] = 'y';
         }
         i++;
     }
