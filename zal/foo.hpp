@@ -10,7 +10,7 @@ std::vector< char > foo(std::list< Human >& people)
 {
     std::vector< char > isAnimalLover;
 
-    for (Human person : people) {
+    for (Human& person : people) {
         person.birthday();
 
         if (person.isMonster()) {
